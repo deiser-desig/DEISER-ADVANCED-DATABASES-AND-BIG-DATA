@@ -1,22 +1,46 @@
 # DEISER-ADVANCED-DATABASES-AND-BIG-DATA
-# Projeto: Solução de Big Data e Banco de Dados para E-Shop Brasil
+# Projeto: Aplicação Prática de Tecnologias de Banco de Dados e Big Data na E-Shop Brasil
 
-# 📦 Projeto: Aplicação Prática de Tecnologias de Banco de Dados e Big Data na E-Shop Brasil
+# ESTUDO DE CASO
+APLICAÇÃO PRÁTICA DE TECNOLOGIAS DE BANCO DE DADOS E BIG DATA EM UMA EMPRESA DE COMÉRCIO ELETRÔNICO.
 
-## 1. Introdução
 
-A E-Shop Brasil é uma das maiores plataformas de e-commerce do país, enfrentando desafios significativos com o aumento do volume de dados. Este projeto propõe uma aplicação que utiliza tecnologias modernas de banco de dados e Big Data para melhorar a gestão de dados e a eficiência logística da empresa.
+## 1. Introdução:
+Aplicação Prática de Tecnologias de Banco de Dados e Big Data em uma Empresa de Comércio Eletrônico.
+1.1 APRESENTAÇÃO DO PROBLEMA: A E-Shop Brasil é uma das maiores plataformas de e-commerce do país, com milhões de clientes ativos e uma média de 100 mil pedidos por dia. Com esse grande volume de dados, surgem desafios relacionados à gestão eficiente da informação, personalização da experiência do cliente e otimização da logística — especialmente em regiões remotas.
+Este projeto propõe uma solução prática e visual que utiliza tecnologias de banco de dados e Big Data para apoiar as áreas de marketing, vendas e operações da empresa.
 
-## 2. Objetivos do Projeto
+1.2 OBJETIVO DO PROJETO: Garantir segurança e privacidade dos dados dos clientes.
+Personalizar a experiência do cliente com base em dados históricos.
+Otimizar a entrega e controle de estoque, especialmente em regiões remotas.
+Implementar uma solução escalável e sustentável a longo prazo.
+Desenvolver uma solução que utilize tecnologias de banco de dados avançadas (SQL, NoSQL) e Big Data para melhorar a gestão de dados e a logística da E-Shop Brasil, garantindo a segurança dos dados dos clientes, oferecendo experiências personalizadas e otimizando a entrega de produtos de forma eficiente e escalável.
 
-- Garantir segurança e privacidade dos dados dos clientes.
-- Personalizar a experiência do cliente com base em dados históricos.
-- Otimizar a entrega e controle de estoque, especialmente em regiões remotas.
-- Implementar uma solução escalável e sustentável a longo prazo.
-- desenvolver uma solução que utilize tecnologias de banco de dados avançadas (SQL, NoSQL) e Big Data para melhorar a gestão de dados e a logística da E-Shop Brasil, garantindo a segurança dos dados dos clientes, oferecendo experiências personalizadas e otimizando a entrega de produtos de forma eficiente e escalável.
+## 2. Descrição do Projeto:
+Este projeto apresenta uma solução prática para os desafios enfrentados pela empresa fictícia E-Shop Brasil, uma gigante do comércio eletrônico nacional. A proposta visa melhorar a gestão de dados e a eficiência logística da empresa utilizando tecnologias modernas.
 
-## 3. Descrição do Projeto
-Este projeto apresenta uma solução prática para os desafios enfrentados pela empresa fictícia E-Shop Brasil, uma gigante do comércio eletrônico nacional. A proposta visa melhorar a gestão de dados e a eficiência logística da empresa utilizando tecnologias modernas como:
+2.1 USO DO DOCKER:
+Utilizamos o Docker para criar um ambiente isolado e padronizado, facilitando a configuração e execução do projeto, além de garantir portabilidade entre diferentes sistemas operacionais.
+
+2.2 CONTAINER COM MONGODB:
+Foi configurado um container Docker com MongoDB, um banco de dados NoSQL orientado a documentos, ideal para armazenar grandes volumes de dados de maneira flexível e escalável.
+
+2.3 APLICAÇÃO STREAMLIT (APP.PY):
+Foi desenvolvido uma aplicação com Streamlit, que;
+Se conecta ao banco MongoDB.
+Permite inserir novos dados no banco.
+Realiza edições e exclusões de dados existentes.
+Concatena dados de diferentes coleções (ex: clientes + pedidos).
+Consulta e exibe os dados em uma interface gráfica acessível via navegador.
+
+3. PASSOS PARA A IMPLEMENTAÇÃO:
+   
+
+
+
+
+
+
 MONGODB (NOSQL): para armazenar e consultar grandes volumes de dados de forma flexível.
 DOCKER: para garantir portabilidade e padronização do ambiente de desenvolvimento e produção.
 STREAMLIT: para construir uma interface web simples e interativa que se comunica com o banco de dados.
