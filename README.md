@@ -7,6 +7,7 @@ APLICAÇÃO PRÁTICA DE TECNOLOGIAS DE BANCO DE DADOS E BIG DATA EM UMA EMPRESA 
 
 ## 1. Introdução:
 Aplicação Prática de Tecnologias de Banco de Dados e Big Data em uma Empresa de Comércio Eletrônico.
+
 1.1 APRESENTAÇÃO DO PROBLEMA: A E-Shop Brasil é uma das maiores plataformas de e-commerce do país, com milhões de clientes ativos e uma média de 100 mil pedidos por dia. Com esse grande volume de dados, surgem desafios relacionados à gestão eficiente da informação, personalização da experiência do cliente e otimização da logística — especialmente em regiões remotas.
 Este projeto propõe uma solução prática e visual que utiliza tecnologias de banco de dados e Big Data para apoiar as áreas de marketing, vendas e operações da empresa.
 
@@ -34,6 +35,55 @@ Concatena dados de diferentes coleções (ex: clientes + pedidos).
 Consulta e exibe os dados em uma interface gráfica acessível via navegador.
 
 3. PASSOS PARA A IMPLEMENTAÇÃO:
+PRIMEIRO,  Clonar o repositório
+```bash
+git clone https://github.com/deiser-desig/e-shop-brasil.git
+cd e-shop-brasil
+SEGUNDO, Subir a infraestrutura com Docker:
+docker-compose up --build
+ou, se for utilizado o Dockerfile diretamente:
+docker build -t eshop-app .
+docker run -p 8501:8501 eshop-app
+TERCEIRO, Executar a aplicação Streamlit
+Acessando o navegador:
+http://localhost:8501
+
+3.1 INSRUÇÕES PARA EXECUTAR A APLICAÇÃO EM STREAMLIT (APP.PY)
+
+Acessando o navegador:
+
+http://localhost:8501
+
+4. FUNCIONALIDADES DA APLICAÇÃO:
+A aplicação possui as seguintes funcionalidades principais:
+
+Inserir dados no banco MongoDB.
+Editar ou excluir dados já existentes.
+Concatenar dados entre diferentes coleções (ex: clientes e pedidos).
+Realizar consultas e visualizar os dados de forma interativa.
+Exibir os resultados na interface gráfica com tabelas e filtros.
+
+4.1 TESTES E EXEMPLOS:
+
+Exemplo_edicao.png
+Descrição: Tela onde o usuário atualiza o nome de um cliente a partir do email.
+
+Simulação: No menu "Editar Dados"
+
+É preenchido: Email do cliente: lucas@email.com
+Novo nome: Lucas M. Lima
+
+ai é clicado em “Atualizar”
+
+E o print é com a mensagem “Cliente inserido com sucesso!”
+
+
+
+
+
+
+
+
    
 
 
