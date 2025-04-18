@@ -144,6 +144,9 @@ E-Shop-Brasil/
     └── exemplo_delecao.png
 
 
+7. CONCLUSÃO:
+A implementação da solução proposta para a E-Shop Brasil demonstra, na prática, como tecnologias modernas de banco de dados e Big Data podem transformar operações de comércio eletrônico. Utilizando MongoDB em um ambiente containerizado com Docker e uma interface interativa desenvolvida em Streamlit, foi possível criar uma aplicação robusta, escalável e funcional para gerenciar dados de forma segura e eficiente. A aplicação permite desde a inserção e manipulação de dados até a visualização e concatenação de diferentes coleções, promovendo insights valiosos para decisões estratégicas em áreas como marketing, logística e vendas. Além disso, o uso de Docker garante portabilidade e padronização do ambiente, enquanto o MongoDB oferece flexibilidade e desempenho no tratamento de dados não estruturados. Com isso, a E-Shop Brasil estaria mais preparada para enfrentar os desafios de crescimento, personalização da experiência do cliente e eficiência logística, alinhando-se com as exigências da LGPD e garantindo uma base tecnológica sustentável para o futuro.
+
 
 
 
