@@ -8,7 +8,7 @@ APLICAÇÃO PRÁTICA DE TECNOLOGIAS DE BANCO DE DADOS E BIG DATA EM UMA EMPRESA 
 ## 1. Introdução:
 Aplicação Prática de Tecnologias de Banco de Dados e Big Data em uma Empresa de Comércio Eletrônico.
 
-1.1 APRESENTAÇÃO DO PROBLEMA: A E-Shop Brasil é uma das maiores plataformas de e-commerce do país, com milhões de clientes ativos e uma média de 100 mil pedidos por dia. Com esse grande volume de dados, surgem desafios relacionados à gestão eficiente da informação, personalização da experiência do cliente e otimização da logística — especialmente em regiões remotas.
+1.1 APRESENTAÇÃO DO PROBLEMA: A E-Shop Brasil é uma das maiores plataformas de e-commerce do país, com milhões de clientes ativos e uma média de 100 mil pedidos por dia. Com esse grande volume de dados, surgem desafios relacionados à gestão eficiente da informação, personalização da experiência do cliente e otimização da logística especialmente em regiões remotas.
 Este projeto propõe uma solução prática e visual que utiliza tecnologias de banco de dados e Big Data para apoiar as áreas de marketing, vendas e operações da empresa.
 
 1.2 OBJETIVO DO PROJETO: Garantir segurança e privacidade dos dados dos clientes.
@@ -81,9 +81,9 @@ E o print é com a mensagem “Cliente inserido com sucesso!”
 
 Para garantir o correto funcionamento da aplicação e facilitar a avaliação do projeto, o repositório deve conter os seguintes arquivos e diretórios:
 Dados Iniciais: Utilizar dados reais de plataformas como o Kaggle, dados de e-commerce, vendas ou clientes.
-Criar dados falsos (mock) diretamente via formulário na aplicação ou usando bibliotecas como Faker (opcional).
+Criar dados falsos (mock) diretamente via formulário na aplicação ou usando bibliotecas como Faker.
 
-Dockerfile (se necessário)
+Dockerfile.
 Arquivo responsável por configurar o ambiente Docker da aplicação manualmente.
 Exemplo de um Dockerfile: FROM python:3.10
 WORKDIR /app
@@ -92,7 +92,7 @@ RUN pip install -r requirements.txt
 COPY . .
 CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
 
-Docker-compose.yml (recomendado)
+Docker-compose.yml (recomendado).
 Permite subir simultaneamente o MongoDB e a aplicação em containers separados.
 Exemplo de docker-compose.yml:
 version: '3.8'
@@ -122,10 +122,10 @@ Edição e exclusão
 Consulta e concatenação de dados
 Interface gráfica interativa
 
-Exemplos/ (opcional)
+Exemplos.
 Diretório contendo prints de tela ou GIFs que demonstram o uso real da aplicação, como:
 Inserção de dados, visualização e edição, exclusão e concatenação
-Resultados exibidos. Esses exemplos servem como guia visual para quem for testar a aplicação.
+Resultados exibidos.
 
 6. Estrutura Sugerida do Repositório
 markdown
