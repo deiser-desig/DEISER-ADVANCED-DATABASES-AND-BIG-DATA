@@ -77,6 +77,73 @@ ai é clicado em “Atualizar”
 
 E o print é com a mensagem “Cliente inserido com sucesso!”
 
+5. ARQUIVOS NECESSÁRIOS:
+
+Para garantir o correto funcionamento da aplicação e facilitar a avaliação do projeto, o repositório deve conter os seguintes arquivos e diretórios:
+Dados Iniciais: Utilizar dados reais de plataformas como o Kaggle, dados de e-commerce, vendas ou clientes.
+Criar dados falsos (mock) diretamente via formulário na aplicação ou usando bibliotecas como Faker (opcional).
+
+Dockerfile (se necessário)
+Arquivo responsável por configurar o ambiente Docker da aplicação manualmente.
+Exemplo de um Dockerfile: FROM python:3.10
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+
+Docker-compose.yml (recomendado)
+Permite subir simultaneamente o MongoDB e a aplicação em containers separados.
+Exemplo de docker-compose.yml:
+version: '3.8'
+services:
+  mongodb:
+    image: mongo
+    container_name: mongo-container
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+app:
+    build: .
+    container_name: streamlit-app
+    ports:
+      - "8501:8501"
+    depends_on:
+      - mongodb
+volumes:
+  mongo-data:
+
+ app.py
+Arquivo principal da aplicação em Streamlit, que implementa:
+Conexão com MongoDB
+Inserção de dados
+Edição e exclusão
+Consulta e concatenação de dados
+Interface gráfica interativa
+
+Exemplos/ (opcional)
+Diretório contendo prints de tela ou GIFs que demonstram o uso real da aplicação, como:
+Inserção de dados, visualização e edição, exclusão e concatenação
+Resultados exibidos. Esses exemplos servem como guia visual para quem for testar a aplicação.
+
+6. Estrutura Sugerida do Repositório
+markdown
+Copiar
+Editar
+E-Shop-Brasil/
+├── README.md
+├── Dockerfile
+├── docker-compose.yml
+├── app.py
+├── requirements.txt
+└── exemplos/
+    ├── exemplo_insercao.png
+    ├── exemplo_visualizacao.png
+    ├── exemplo_edicao.png
+    └── exemplo_delecao.png
+
+
 
 
 
